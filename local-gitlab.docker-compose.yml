@@ -28,9 +28,9 @@
       - "2222:22"     # SSH
       # HTTPS можно добавить позже
     volumes:
-      - ./gitlab/config:/etc/gitlab
-      - ./gitlab/data:/var/opt/gitlab
-      - ./gitlab/logs:/var/log/gitlab
+      - C:/Docker volumes/gitlab/config:/etc/gitlab
+      - C:/Docker volumes/gitlab/data:/var/opt/gitlab
+      - C:/Docker volumes/gitlab/logs:/var/log/gitlab
     networks:
       - gitlab-net
     # Добавим для надежности
