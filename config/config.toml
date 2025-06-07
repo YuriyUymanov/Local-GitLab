@@ -1,0 +1,16 @@
+concurrent = 1
+check_interval = 0
+
+[session_server]
+  session_timeout = 1800
+
+[[runners]]
+  name = "docker-runner"
+  url = "http://gitlab_local:80"
+  token = "glrt-kj-doUak0jySXo6-HTzSW286MQpwOjIKdDozCnU6MQ8.01.1705s2q67"
+  executor = "docker"
+  [runners.docker]
+    tls_verify = false
+    image = "alpine:latest"
+    privileged = true
+    volumes = ["/cache", "/var/run/docker.sock:/var/run/docker.sock"]
