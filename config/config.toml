@@ -11,6 +11,6 @@ check_interval = 0
   executor = "docker"
   [runners.docker]
     tls_verify = false
-    image = "alpine:latest"
+    image = "docker:dind"
     privileged = true
     volumes = ["/cache", "/var/run/docker.sock:/var/run/docker.sock"]
