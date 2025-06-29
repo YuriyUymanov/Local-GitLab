@@ -4,13 +4,13 @@ This repo contains GItLab configuration to make your own local GitLab server usi
 
 ## Installation
 
-To install ypur local GitLab server in docker, please, follow this steps:
+To install your local GitLab server in docker, please, follow this steps:
 
 1. Clone this repo to your local PC
 2. Open terminal in repo folder
 3. Use this command ```docker-compose up -f .\local-gitlab.docker-compose.yml -d```
 4. Wait until both gitlab and runner will installed. Usually it takes about 10-20 mins depend on your PC hardware
-5. Open your [gitlab](http:gitlab.local:8888) and login with following credits - username: root, pass: 42314231
+5. Open your [gitlab](http://gitlab.local:8888) and login with following credits - username: root, pass: 42314231
 6. Congratulations!
 
 ## Setting up runner
